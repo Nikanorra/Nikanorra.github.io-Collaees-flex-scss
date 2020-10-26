@@ -95,5 +95,24 @@
     font-size: 13px;
     line-height: 18px;
 }
+}
 
+@media screen and (max-width: 550px) {
+  .container .carousel__bg .carousel__wrap {
+    width: 100%;
+  }
+  .carousel__text-para {
+    font-size: 13px;
+  }
+  .carousel__footer {
+    top: 180%;
+  }
+  .carousel__footer-title {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .carousel__footer-descr {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
