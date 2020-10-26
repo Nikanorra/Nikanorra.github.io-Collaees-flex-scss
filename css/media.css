@@ -195,6 +195,31 @@ i {
 
   .menu__link__sub:hover .menu__list__sub-sub {
     background-color: #f2f2f2; } }
+@media screen and (max-width: 760px) {
+  .carousel__text-para:last-child {
+    height: 35px; }
+
+  .carousel__text-sale {
+    font-size: 40px; }
+
+  .carousel__text-item {
+    font-size: 20px;
+    font-family: "HelveticaNeueCyr-Bold";
+    line-height: 35px; }
+
+  .carousel__text-para {
+    font-size: 17px;
+    line-height: 25px; }
+
+  .carousel__footer {
+    top: 100%; }
+
+  .carousel__footer-title {
+    font-size: 20px;
+    line-height: 60px; }
+
+  .carousel__footer-descr {
+    line-height: 26px; } }
 @media screen and (max-width: 670px) {
   .container {
     flex-wrap: wrap; }
