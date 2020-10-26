@@ -1,0 +1,63 @@
+@import "style.scss";
+
+@media screen and (max-width: 1100px) {
+  header .container .col-3 {
+    order: 1;
+    width: 50%;
+  }
+  header .container .col-6 {
+    width: 50%;
+  }
+  .menu__wrap {
+    display: none;
+  }
+  .menu__burger {
+    display: block;
+    position: fixed;
+  }
+  .menu.active .menu__wrap {
+    display: block;
+  }
+  .menu__list {
+    flex-direction: column;
+    top: 0;
+    position: absolute;
+  }
+  .menu__list__sub {
+    background-color: $baseColorMenuGreen;
+  }
+}
+
+
+@media screen and (max-width: 670px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  header .container .col-6 {
+    order: 3;
+  }
+  header .container .col-3 {
+    width: 100%;
+  }
+  .logo {
+    padding-bottom: 10px;
+  }
+  .logo__text {
+    left: 0;
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .contacts__text {
+    font-size: 12px;
+    padding-right: 5px;
+}
+  .contacts__phone {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+}

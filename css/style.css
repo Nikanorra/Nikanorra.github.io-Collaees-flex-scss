@@ -1,0 +1,119 @@
+header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  font-family: "HelveticaNeueCyr-Thin";
+  font-size: 14px;
+  color: #363636;
+  max-height: 65px; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #363636; }
+
+i {
+  color: #91c47e; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  position: relative; }
+
+.logo__text {
+  position: absolute;
+  right: 10%;
+  font-size: 11px; }
+
+.menu__burger {
+  display: none; }
+
+.menu__list {
+  display: flex;
+  justify-content: space-between; }
+
+.menu__link i {
+  padding-left: 5px;
+  font-size: 10px;
+  align-self: center; }
+
+.menu__link {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  padding-bottom: 5px;
+  transition: 1s; }
+
+.menu__nav {
+  position: relative; }
+
+.menu__link:hover {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #91c47e; }
+
+/*sum-menu*/
+.menu__list__sub {
+  color: #000;
+  font-family: "HelveticaNeueCyr-Light";
+  line-height: 26px;
+  font-size: 14px; }
+
+.menu__list__sub {
+  display: none; }
+
+.menu__link:hover .menu__list__sub {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(215, 233, 206, 0.8);
+  width: 250px; }
+
+/*sub-sum-menu*/
+.menu__list__sub-sub {
+  display: none;
+  width: 250px;
+  background-color: rgba(242, 242, 242, 0.8); }
+
+.menu__link__sub {
+  padding: 0 20px;
+  transition: 1s; }
+
+.menu__link__sub:hover .menu__list__sub-sub {
+  display: block;
+  z-index: 2; }
+
+.menu__link__sub:hover {
+  background: rgba(242, 242, 242, 0.8); }
+
+.menu__list__sub-sub {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%; }
+
+.menu__link__sub-sub {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent; }
+
+.menu__link__sub-sub a:hover {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #91c47e; }
+
+/*contacs*/
+.contacts__text {
+  font-family: "HelveticaNeueCyr-Bold"; }
+
+.contacts__phone {
+  font-size: 18px;
+  line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */

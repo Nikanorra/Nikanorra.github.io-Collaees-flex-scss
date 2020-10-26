@@ -1,0 +1,147 @@
+//colors
+$colorGreen: #91c47e;
+$colorTransparent: transparent;
+$colorText: #363636;
+$colorTextMenu: #000;
+$gradientHeader: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0) 100%);
+$baseColorMenuGreenRGBA: rgba(215,233,206, 0.9);
+$baseColorMenuGreen: #dbebd2;
+$baseColorMenuGreyRGBA: rgba(242,242,242, 0.9);
+$baseColorMenuGreyRGBA: #f2f2f2;
+$colorBgGreen: fade-out(rgba($baseColorMenuGreenRGBA, 0.9), 0.1);
+$colorBgGrey: fade-out(rgba($baseColorMenuGreyRGBA, 0.9), 0.1);
+
+
+//fonts
+$fontSize: 14px;
+$fontThin: "HelveticaNeueCyr-Thin";
+$fontLight: "HelveticaNeueCyr-Light";
+$fontRoman: "HelveticaNeueCyr-Roman";
+$fontBold: "HelveticaNeueCyr-Bold";
+
+//transition
+$transitionTime: 1s;
+
+@mixin borderBottom ($borderWidth: 2px, $borderStyle: solid, $borderColor: $colorGreen) {
+  border: {
+    bottom-width: $borderWidth;
+    bottom-style: $borderStyle;
+    bottom-color: $borderColor;
+  }
+}
+header {
+  background: $gradientHeader;
+  font-family: $fontThin;
+  font-size: $fontSize;
+  color: $colorText;
+  max-height: 65px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $colorText;
+}
+i {
+  color: $colorGreen;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  position: relative;
+}
+.logo__text {
+  position: absolute;
+  right: 10%;
+  font-size: 11px;
+}
+.menu__burger {
+  display: none;
+}
+.menu__list  {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__link i {
+  padding-left: 5px;
+  font-size: 10px;
+  align-self: center;
+}
+.menu__link {
+  @include borderBottom ($borderColor: $colorTransparent);
+  padding-bottom: 5px;
+  transition: $transitionTime;
+  // position: relative;
+}
+.menu__nav {
+  position: relative;
+}
+.menu__link:hover {
+  @include borderBottom
+}
+
+/*sum-menu*/
+.menu__list__sub {
+  color: $colorTextMenu;
+  font-family: $fontLight;
+  line-height: 26px;
+  font-size: 14px;
+}
+.menu__list__sub {
+  display: none;
+}
+.menu__link:hover .menu__list__sub {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: $colorBgGreen;
+  width: 250px;
+}
+
+/*sub-sum-menu*/
+.menu__list__sub-sub {
+  display: none;
+  width: 250px;
+  background-color: $colorBgGrey;
+}
+.menu__link__sub {
+  padding: 0 20px;
+    transition: $transitionTime;
+}
+.menu__link__sub:hover .menu__list__sub-sub {
+  display: block;
+  z-index: 2;
+}
+.menu__link__sub:hover {
+  background: $colorBgGrey;
+}
+.menu__list__sub-sub {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+}
+.menu__link__sub-sub {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  @include borderBottom ($borderColor: $colorTransparent);
+}
+.menu__link__sub-sub a:hover {
+  @include borderBottom;
+}
+
+
+
+/*contacs*/
+.contacts__text {
+  font-family: $fontBold;
+}
+.contacts__phone {
+  font-size: 18px;
+  line-height: 24px;
+}
