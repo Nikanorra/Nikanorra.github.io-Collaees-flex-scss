@@ -7,7 +7,7 @@ $gradientHeader: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0
 $baseColorMenuGreenRGBA: rgba(215,233,206, 0.9);
 $baseColorMenuGreen: #dbebd2;
 $baseColorMenuGreyRGBA: rgba(242,242,242, 0.9);
-$baseColorMenuGreyRGBA: #f2f2f2;
+$baseColorMenuGrey: #f2f2f2;
 $colorBgGreen: fade-out(rgba($baseColorMenuGreenRGBA, 0.9), 0.1);
 $colorBgGrey: fade-out(rgba($baseColorMenuGreyRGBA, 0.9), 0.1);
 
@@ -50,6 +50,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .logo {
   position: relative;
@@ -136,7 +137,6 @@ i {
 }
 
 
-
 /*contacs*/
 .contacts__text {
   font-family: $fontBold;
@@ -144,4 +144,59 @@ i {
 .contacts__phone {
   font-size: 18px;
   line-height: 24px;
+}
+
+
+
+
+
+/*carousel*/
+.brace,
+.brace-flip {
+  fill: $colorGreen;
+}
+.brace {
+  padding-right: 17px;
+}
+.brace-flip {
+  transform: rotate(180deg);
+  padding-left: 17px;
+}
+.carousel__wrap {
+  position: absolute;
+  top: 130px;
+  display: flex;
+}
+.carousel__text-para:last-child {
+  display: flex;
+  height: 52px;
+}
+.carousel__text-sale {
+  align-self: flex-end;
+  color: $colorGreen;
+  font-size: 52px;
+  font-family: $fontBold;
+  padding-left: 10px;
+}
+.carousel__text-item {
+  font-size: 30px;
+  font-family: $fontBold;
+  line-height: 40px;
+}
+.carousel__text-para {
+  font-size: 23px;
+  line-height: 35px;
+}
+/*footer*/
+.carousel__footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.carousel__footer-title {
+  font-size: 30px;
+  line-height: 80px;
+}
+.carousel__footer-descr {
+  line-height: 26px;
 }

@@ -20,12 +20,16 @@
   }
   .menu__list {
     flex-direction: column;
-    top: 0;
+    top: 25px;
     position: absolute;
   }
-  .menu__list__sub {
+  .menu__link:hover .menu__list__sub {
     background-color: $baseColorMenuGreen;
   }
+  .menu__link__sub:hover .menu__list__sub-sub {
+    background-color: $baseColorMenuGrey;
+  }
+
 }
 
 
@@ -43,6 +47,9 @@
     padding-bottom: 10px;
   }
   .logo__text {
+    left: 0;
+  }
+  .menu__list__sub-sub {
     left: 0;
   }
   .contacts {
